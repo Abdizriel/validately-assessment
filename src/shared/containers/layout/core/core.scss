@@ -1,0 +1,49 @@
+@import '../../../../styles/variables';
+
+.navbar {
+    border-bottom: 1px solid $border-color;
+    background: $white;
+    height: 4.5rem;
+
+    &__container {
+        display: flex;
+        align-items: center;
+    }
+
+    &__branding {
+        display: flex;
+        align-items: center;
+        margin: 1.25rem 0;
+    }
+
+    &__logotype {
+        height: 2rem;
+        margin-right: 0.5rem;
+    }
+
+    &__items {
+        margin-left: auto;
+    }
+
+    &__item {
+        text-decoration: none;
+        color: $primary-color;
+        padding: 1.5rem 0 1.54rem;
+        margin: 1.25rem 1rem 1.25rem 0;
+        font-weight: 600;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:hover, &:focus, &:active {
+            color: $secondary-color;
+            border-bottom: 2px solid rgba(16, 167, 245, 1);
+        }
+
+        &--active {
+            color: $secondary-color;
+            border-bottom: 2px solid rgba(16, 167, 245, 1);
+        }
+    }
+}
